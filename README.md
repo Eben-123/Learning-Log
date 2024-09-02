@@ -9,67 +9,83 @@ To get started with this project, follow these steps:
 1. Clone the repository to your local machine:
 
     ```
-    git clone https://github.com/TechStarsCommunity/FE-Online_Library.git
+    git clone https://github.com/Eben-123/Learning-Log.git
     ```
 
 2. Navigate into the project directory:
 
     ```
-    cd FE-Online_Library
+    cd Learning-Log
     ```
 
-3. Install the project dependencies:
+3. Create a virtual environment (recommended):
 
     ```
-    npm install
+    python -m venv name_of_env
     ```
 
-4. Start the development server:
+4. Activate the virtual environment:
 
     ```
-    npm run dev
+    source name_of_env/bin/activate
     ```
 
-5. Open your web browser and navigate to http://localhost:5173 to view the app.
+5. Activate the virtual environment:
+
+    ```
+    source name_of_env/bin/activate
+    ```
+
+6. Install the packages:
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+7. Open your web browser and navigate to http://localhost:8000 to view the app.
 
 ## Project Structure
 
 Here is a breakdown of the project structure:
 
 ```
-├── node_modules/
-├── public/
-│   ├── vite.svg
-│   ├── images and other assets
-├── src/
-│   ├── App.jsx
-│   ├── index.jsx
-│   ├── styles/
-|   |   ├── //styles go here
-|   |   ├── App.css
-│   |   ├── index.css
-|   ├── pages/
-|   |   ├── //pages go here
-│   |   ├── Template.jsx
-|   ├── components/
-│   |   ├── //components go here
+├── learning_log/
+├── learning_logs/
+|   ├── urls.py
+|   ├── views.py
+│   ├── migrations/
+│   ├── templates/learning_logs/
+|   |                   ├── //User Interface pages
+|   |                   ├── base.html
+│   |                   ├── edit_entry.html
+|   |                   ├── index.html
+|   |                   ├── new_entry.html
+|   |                   ├── new_topic.html
+|   |                   ├── topic.html
+|   |                   ├── topics.html
+├── users/
+│   ├── urls.py
+│   ├── views.py
+│   ├── /templates/registration/
+|   |                   ├── //Authentication pages
+|   |                   ├── login.html
+│   |                   ├── logout.html
+|   |                   ├── register.html
 ├── .gitignore
-|── .eslintrc.cjs
-|── index.html
-├── package.json
-|── package-lock.json
+|── manage.py
+|── Procfile
+├── requirements.txt
+|── runtime.txt
 ├── README.md
-├── vite.config.js
 ```
 
--   `node_modules`: contains all the project dependencies.
--   `public`: contains any other static assets(images, icons) that will be served by the development server or included in the production build.
--   `src`: contains the application code, including the entry point (`main.jsx`), the root component (`App.jsx`), and other components or styles.
--   `.eslintrc.cjs`: contains configuration options for ESLint.
+-   `learning_log`: contains all the project dependencies.
+-   `learning_logs`: contains any other user interface that will be served by the development server or included in the production build specific to the user.
+-   `users`: contains the user authentication code, including the login (`login.html`), logout (`logout.html`), and registration (`register.html`).
 -   `.gitignore`: specifies files and directories that Git should ignore.
--   `package.json`: contains project metadata and specifies dependencies and scripts.
+-   `requirements.txt`: contains the essential packages to run the application.
+-   `runtime.txt`: contains the python version, used in the creation of the application.
 -   `README.md`: contains project documentation.
--   `vite.config.js`: contains configuration options for Vite.
 
 ## Contributing
 
@@ -82,13 +98,13 @@ Thank you for considering contributing to our project! Here are the guidelines f
 2. Clone the repository to your local machine:
 
     ```
-    git clone https://github.com/TechStarsCommunity/FE-Online_Library.git
+    git clone https://github.com/Eben-123/Learning-Log.git
     ```
 
 3. Navigate into the project directory:
 
     ```
-    cd FE-Online_Library
+    cd Learning-Log
     ```
 
 4. Create a new branch with your nickname and team name:
