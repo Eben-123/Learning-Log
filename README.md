@@ -84,7 +84,7 @@ Here is a breakdown of the project structure:
 -   `users`: contains the user authentication code, including the login (`login.html`), logout (`logout.html`), and registration (`register.html`).
 -   `.gitignore`: specifies files and directories that Git should ignore.
 -   `requirements.txt`: contains the essential packages to run the application.
--   `runtime.txt`: contains the python version, used in the creation of the application.
+-   `runtime.txt`: contains the python version, used during the application creation.
 -   `README.md`: contains project documentation.
 
 ## Contributing
