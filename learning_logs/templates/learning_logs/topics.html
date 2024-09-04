@@ -5,16 +5,16 @@
 {% endblock page_header %}
 
 {% block content %}
-  <ul>
+  <ul class="list-unstyled ">
     {% for topic in topics %}
-      <li><h3>
-        <a href="{% url 'learning_logs:topic' topic.id %}">{{ topic }}</a>
-      </h3></li>
+      <li class="border border-secondary p-3 m-2 rounded-lg bg-info ">
+        <a href="{% url 'learning_logs:topic' topic.id %}" class="text-decoration-none"><h3 class="text-white">{{ topic }}</h3></a>
+      </li>
     {% empty %}
       <li><h3>No topics have been added yet.</h3></li>
     {% endfor %}
   </ul>
 
-  <h3><a href="{% url 'learning_logs:new_topic' %}">Add a new topic</a></h3>
+  <a href="{% url 'learning_logs:new_topic' %}"><button type="button" class="p-2 m-2 bg-info border-0 rounded-lg text-white">Add new topic</button></a>
 
 {% endblock content %}
