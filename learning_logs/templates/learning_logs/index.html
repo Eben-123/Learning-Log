@@ -1,14 +1,21 @@
 {% extends "learning_logs/base.html" %}
 
 {% block content %}
-  <div class="jumbotro">
-    <h1 class="display-3">Track your learning.</h1>
+  <div class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="text-center">
+      <!-- Image with better alignment and spacing -->
+      <img src="https://i.ibb.co/HVNmJ3d/Learning-Log.png" class="rounded-2 img-fluid mb-4" alt="Learning-Log" style="max-width: 250px;">
 
-    <p class="lead">Make your own Learning Log, and keep a list of the
-          topics you're learning about. Whenever you learn something new
-          about a topic, make an entry summarizing what you've learned.
-    </p>
-    <a class="btn btn-lg" href="{% url 'users:register' %}" 
-        role="button btn-success"> <button class="p-2 bg-info border-0 rounded-lg text-white "type="submit">Register &raquo;</button></a>
+      <!-- Main heading -->
+      <h1 class="display-4 fw-bold">Track your learning</h1>
+
+      <!-- Lead text with reduced width for better readability -->
+      <p class="lead mx-auto mt-3" style="max-width: 600px;">
+        Make your own Learning Log and keep a list of the topics you're learning about. Whenever you learn something new about a topic, make an entry summarizing what you've learned.
+      </p>
+
+      <!-- Register button -->
+      <a href="{% url 'users:register' %}" class="btn btn-success btn-lg mt-4" role="button">Register &raquo;</a>
+    </div>
   </div>
 {% endblock content %}
